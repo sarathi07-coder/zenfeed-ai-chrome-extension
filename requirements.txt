@@ -1,0 +1,38 @@
+fastapi
+uvicorn[standard]
+pydantic
+python-dotenv
+
+# Google Cloud & APIs
+google-auth
+google-auth-oauthlib
+google-api-python-client
+google-cloud-firestore
+google-cloud-logging
+google-generativeai
+
+# LLM & AI
+openai
+anthropic
+
+# Database & Caching
+redis
+sqlalchemy
+
+# HTTP & Async
+httpx
+aiohttp
+requests
+
+# Data Processing
+pandas
+numpy
+
+# Testing
+pytest
+pytest-asyncio
+pytest-cov
+
+# Utilities
+python-multipart
+pyyaml

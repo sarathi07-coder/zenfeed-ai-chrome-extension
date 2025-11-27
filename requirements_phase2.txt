@@ -1,0 +1,14 @@
+requests
+google-api-python-client
+nltk
+pytube
+numpy
+pandas
+scikit-learn
+torch
+transformers
+opencv-python
+beautifulsoup4
+flask
+fastapi
+uvicorn

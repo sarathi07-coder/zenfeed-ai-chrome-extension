@@ -1,0 +1,59 @@
+{
+    "manifest_version": 3,
+    "name": "ZenFeed - AI Social Media Detox",
+    "version": "1.0.0",
+    "description": "Intelligent feed optimization to reduce social media addiction and boost productivity",
+    "permissions": [
+        "storage",
+        "activeTab",
+        "scripting"
+    ],
+    "host_permissions": [
+        "https://*.youtube.com/*",
+        "https://*.instagram.com/*"
+    ],
+    "background": {
+        "service_worker": "js/background.js"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.youtube.com/*",
+                "https://*.instagram.com/*"
+            ],
+            "js": [
+                "js/content.js"
+            ],
+            "css": [
+                "styles/interventions.css"
+            ],
+            "run_at": "document_idle"
+        }
+    ],
+    "action": {
+        "default_popup": "popup/popup.html",
+        "default_icon": {
+            "16": "assets/icon16.png",
+            "48": "assets/icon48.png",
+            "128": "assets/icon128.png"
+        },
+        "default_title": "ZenFeed"
+    },
+    "icons": {
+        "16": "assets/icon16.png",
+        "48": "assets/icon48.png",
+        "128": "assets/icon128.png"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "assets/*",
+                "styles/*"
+            ],
+            "matches": [
+                "https://*.youtube.com/*",
+                "https://*.instagram.com/*"
+            ]
+        }
+    ]
+}
